@@ -1,71 +1,38 @@
-::[Bat To Exe Converter]
-::
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCaDJHuI9UE7FDh5aDgEwII93GqaHyh8NTUCUqGbozS3p3Hn2L2aIvUU1UPlY58u2XQUkcgDbA==
-::YAwzuBVtJxjWCl3EqQJhSA==
-::ZR4luwNxJguZRRnTrBtQ
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpCI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJlZkkaHGQ=
-::ZQ05rAF9IBncCkqN+0xwdVsBAlbMbAs=
-::ZQ05rAF9IAHYFVzEqQK39erTl/gH1Iw863eZPy1+Cj2noFRddfE7apubzOHAcq5Dig==
-::eg0/rx1wNQPfEVWB+kM9LVsJDINfzexh+jD0D24WLW9QZ8j4g8I9Yc/6ybCcNKAFvwu2O8ZN
-::fBEirQZwNQPfEVWB+kM9LVsJDINfzexh+jD0D24WLW9QZ8j4g8I9Yc/6ybCcNKAFvwu2O8ZN
-::cRolqwZ3JBvQF1fEqQK39erTl/gH1Iw863eZPy1+Cj2noFRddfE7apubzOHAcq5Dig==
-::dhA7uBVwLU+EWFiX8FAkfk0CAgeNMQs=
-::YQ03rBFzNR3SWATE9VE0Og8CGlLMP2S3Zg==
-::dhAmsQZ3MwfNWATE9VE0Og8CGlLMP2S3Zg==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCaDJHuI9UE7FDh5aDgEwII93GqaHyh8NTUCUqGbozS3p3HnXWl/pzvvb60D83vvU62fHS7bLBlBPjO4ah0g6XgX+DbLZ4mZqwqB
-::YB416Ek+ZW8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
 
-::»ñÈ¡¹ÜÀíÔ±È¨ÏŞ£¨´ò°ü·¢²¼×Ô´ø¹ÜÀíÔ±Æô¶¯£©
+::è·å–ç®¡ç†å‘˜æƒé™ï¼ˆæ‰“åŒ…å‘å¸ƒè‡ªå¸¦ç®¡ç†å‘˜å¯åŠ¨ï¼‰
 ::%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
 
-::ÅäÖÃBAT¶Ô»°¿òÑùÊ½
-title ÍøÂçÇĞ»»¹¤¾ß@by Asdrt v5.2.0 asdrt666.com
-::ÅäÖÃ´°¿Ú´óĞ¡
+::é…ç½®BATå¯¹è¯æ¡†æ ·å¼
+title ç½‘ç»œåˆ‡æ¢å·¥å…·@by Asdrt v5.2.0 asdrt666.com
+::é…ç½®çª—å£å¤§å°
 ::MODE con: COLS=80 lines=20
-::ÎÄ±¾ÑÕÉ«
+::æ–‡æœ¬é¢œè‰²
 ::color 0a
 
-::²Ëµ¥
+::èœå•
 :begin
 cls
 echo.
 echo.
-echo     --ÍøÂçÇĞ»»¹¤¾ß@by Asdrt v5.2.0 20210412 1148--
+echo     --ç½‘ç»œåˆ‡æ¢å·¥å…·@by Asdrt v5.2.0 20210412 1148--
 echo                  https://asdrt666.com
 echo.
 echo ============================================================================
-echo 0.´ò¿ª·¢²¼Ò³¼ì²é¸üĞÂ
-echo 1.¸ü¸ÄÄÚÍâÍøÍ¬Ê±Ê¹ÓÃ£¨ĞŞ¸ÄIPV4¸ÄÂ·ÓÉ±í£©
-echo 2.¼ì²éÍø¹ØÁ¬½ÓÇé¿ö
-echo 3.»Ö¸´µÚÒ»Ñ¡ÏîĞŞ¸Ä
-echo 4.Ä¬ÈÏÍø¹Ø²éÑ¯(²âÊÔ¹¦ÄÜ)
-echo 5.¸ü¸ÄÖ¸¶¨ÍøÂçµÄIP/DNS
-echo 6.DNSÊÊÅäĞÔ²éÑ¯
-echo 7.»Ö¸´²¡¶¾Ôì³ÉµÄÎÄ¼ş¶ªÊ§£¨¸ü¸ÄÎÄ¼şÊôĞÔ£©
-echo 8.¸üĞÂÈÕÖ¾
-echo 9.ÍË³ö
+echo 0.æ‰“å¼€å‘å¸ƒé¡µæ£€æŸ¥æ›´æ–°
+echo 1.æ›´æ”¹å†…å¤–ç½‘åŒæ—¶ä½¿ç”¨ï¼ˆä¿®æ”¹IPV4æ”¹è·¯ç”±è¡¨ï¼‰
+echo 2.æ£€æŸ¥ç½‘å…³è¿æ¥æƒ…å†µ
+echo 3.æ¢å¤ç¬¬ä¸€é€‰é¡¹ä¿®æ”¹
+echo 4.é»˜è®¤ç½‘å…³æŸ¥è¯¢(æµ‹è¯•åŠŸèƒ½)
+echo 5.æ›´æ”¹æŒ‡å®šç½‘ç»œçš„IP/DNS
+echo 6.DNSé€‚é…æ€§æŸ¥è¯¢
+echo 7.æ¢å¤ç—…æ¯’é€ æˆçš„æ–‡ä»¶ä¸¢å¤±ï¼ˆæ›´æ”¹æ–‡ä»¶å±æ€§ï¼‰
+echo 8.æ›´æ–°æ—¥å¿—
+echo 9.é€€å‡º
 echo ============================================================================
 echo.
 echo.
-choice /c 1234567890 /n /m "ÇëÑ¡Ôñ¡¾1-9¡¿£º"
+choice /c 1234567890 /n /m "è¯·é€‰æ‹©ã€1-9ã€‘ï¼š"
 
 if %errorlevel% == 1 goto set_1
 if %errorlevel% == 2 goto set_2
@@ -78,60 +45,60 @@ if %errorlevel% == 8 goto set_8
 if %errorlevel% == 9 goto end
 if %errorlevel% == 0 goto github
 
-::´ò¿ª·¢²¼Ò³¼ì²é¸üĞÂ
+::æ‰“å¼€å‘å¸ƒé¡µæ£€æŸ¥æ›´æ–°
 :github
 start https://github.com/Asdrt852/CMD_DT/releases
 ::start asdrt666.com
 goto begin
 
-::Ñ¡ÔñÊ¹ÓÃ³¡¾°
+::é€‰æ‹©ä½¿ç”¨åœºæ™¯
 :set_1
 cls
-echo Ñ¡ÔñÊ¹ÓÃ³¡¾°»Ø³µÈ·ÈÏ£º
+echo é€‰æ‹©ä½¿ç”¨åœºæ™¯å›è½¦ç¡®è®¤ï¼š
 echo.
-echo 1.¾ÖÄÚ
+echo 1.å±€å†…
 echo.
-echo 2.´óÌü
+echo 2.å¤§å…
 echo.
-set /p changjing= [ÄúµÄÑ¡ÔñÊÇ£º]
+set /p changjing= [æ‚¨çš„é€‰æ‹©æ˜¯ï¼š]
 if %changjing% == 1 goto set_1_1
 if %changjing% == 2 goto set_1_2
 
-::ĞŞ¸ÄÍø¹Ø(¾ÖÄÚ³¡¾°)
+::ä¿®æ”¹ç½‘å…³(å±€å†…åœºæ™¯)
 :set_1_1
 cls
 ipconfig
 call :sysm
 goto ipa
 
-::ĞŞ¸ÄÍø¹Ø(´óÌü³¡¾°)
+::ä¿®æ”¹ç½‘å…³(å¤§å…åœºæ™¯)
 :set_1_2
 cls
 ipconfig
 call :sysm
 goto ipa2
 
-::ÎÄ×ÖÊ¹ÓÃËµÃ÷
+::æ–‡å­—ä½¿ç”¨è¯´æ˜
 :sysm
 echo.
 echo.
 echo.
 echo ============================================================================
-echo ¡¤¡¤¡¤¡¤¡¤°´ÕÕÒÔÏÂ²½Öè²Ù×÷¡¤¡¤¡¤¡¤¡¤
-echo 1.´ÓÉÏÃæÕÒµ½ĞÂÍø¿¨Íø¹ØµØÖ·£¨ÎŞÏßÍø¿¨µÄÍø¹Ø£©
-echo 2.ÔÚÏÂ·½ÊäÈëÍø¹ØµØÖ·
-echo 3.µÈ´ıĞŞ¸Ä
+echo Â·Â·Â·Â·Â·æŒ‰ç…§ä»¥ä¸‹æ­¥éª¤æ“ä½œÂ·Â·Â·Â·Â·
+echo 1.ä»ä¸Šé¢æ‰¾åˆ°æ–°ç½‘å¡ç½‘å…³åœ°å€ï¼ˆæ— çº¿ç½‘å¡çš„ç½‘å…³ï¼‰
+echo 2.åœ¨ä¸‹æ–¹è¾“å…¥ç½‘å…³åœ°å€
+echo 3.ç­‰å¾…ä¿®æ”¹
 echo ============================================================================
 goto :eof
 
-::ÊäÈë¸ü¸Ä¶Ë¿Ú(¾ÖÄÚ)
+::è¾“å…¥æ›´æ”¹ç«¯å£(å±€å†…)
 :ipa
-echo. --Íø¹ØÄ¬ÈÏÖµÎª192.168.10.254--
+echo. --ç½‘å…³é»˜è®¤å€¼ä¸º192.168.10.254--
 echo.
-set/p ip=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£¬ĞŞ¸ÄÖ±½ÓÊäÈë--
+set/p ip=--é»˜è®¤ç›´æ¥æŒ‰å›è½¦ï¼Œä¿®æ”¹ç›´æ¥è¾“å…¥--
 if not defined ip set ip=192.168.10.254
 
-::ĞŞ¸Ä(¾ÖÄÚ)
+::ä¿®æ”¹(å±€å†…)
 :ipg
 cls
 echo ============================================================================
@@ -141,14 +108,14 @@ route add 59.195.0.0 mask 255.255.0.0 %ip%
 route add 202.99.0.0 mask 255.255.0.0 %ip%
 goto :wmjs
 
-::ÊäÈë¸ü¸Ä¶Ë¿Ú(´óÌü)
+::è¾“å…¥æ›´æ”¹ç«¯å£(å¤§å…)
 :ipa2
-echo. --Íø¹ØÄ¬ÈÏÖµÎª10.20.30.1--
+echo. --ç½‘å…³é»˜è®¤å€¼ä¸º10.20.30.1--
 echo.
-set/p ip=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£¬ĞŞ¸ÄÖ±½ÓÊäÈë--
+set/p ip=--é»˜è®¤ç›´æ¥æŒ‰å›è½¦ï¼Œä¿®æ”¹ç›´æ¥è¾“å…¥--
 if not defined ip set ip=10.20.30.1
 
-::ĞŞ¸Ä(´óÌü)
+::ä¿®æ”¹(å¤§å…)
 :ipg2
 cls
 echo ============================================================================
@@ -165,26 +132,26 @@ call :wmjs2
 pause>nul
 goto begin
 
-::»Ö¸´
+::æ¢å¤
 :set_3
 cls
-echo Ñ¡ÔñÊ¹ÓÃ³¡¾°»Ø³µÈ·ÈÏ£º
+echo é€‰æ‹©ä½¿ç”¨åœºæ™¯å›è½¦ç¡®è®¤ï¼š
 echo.
-echo 1.¾ÖÄÚ
+echo 1.å±€å†…
 echo.
-echo 2.´óÌü
+echo 2.å¤§å…
 echo.
-set /p hfchangjing= [ÄúµÄÑ¡ÔñÊÇ£º]
+set /p hfchangjing= [æ‚¨çš„é€‰æ‹©æ˜¯ï¼š]
 if %hfchangjing% == 1 goto set_3_1
 if %hfchangjing% == 2 goto set_3_2
 
-::»Ö¸´Íø¹Ø(¾ÖÄÚ³¡¾°)
+::æ¢å¤ç½‘å…³(å±€å†…åœºæ™¯)
 :set_3_1
 cls
 route print
 echo.
-echo. --Íø¹ØÄ¬ÈÏÖµÎª192.168.10.254--
-set/p iphf=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£¬ĞŞ¸ÄÖ±½ÓÊäÈë--
+echo. --ç½‘å…³é»˜è®¤å€¼ä¸º192.168.10.254--
+set/p iphf=--é»˜è®¤ç›´æ¥æŒ‰å›è½¦ï¼Œä¿®æ”¹ç›´æ¥è¾“å…¥--
 if not defined iphf set iphf=192.168.10.254
 cls
 echo ============================================================================
@@ -194,13 +161,13 @@ route delete 59.195.0.0 mask 255.255.0.0 %iphf%
 route delete 202.99.0.0 mask 255.255.0.0 %iphf%
 goto :wmjs
 
-::»Ö¸´Íø¹Ø(´óÌü³¡¾°)
+::æ¢å¤ç½‘å…³(å¤§å…åœºæ™¯)
 :set_3_2
 cls
 route print
 echo.
-echo. --Íø¹ØÄ¬ÈÏÖµÎª10.20.30.1--
-set/p iphf=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£¬ĞŞ¸ÄÖ±½ÓÊäÈë--
+echo. --ç½‘å…³é»˜è®¤å€¼ä¸º10.20.30.1--
+set/p iphf=--é»˜è®¤ç›´æ¥æŒ‰å›è½¦ï¼Œä¿®æ”¹ç›´æ¥è¾“å…¥--
 if not defined iphf set iphf=10.20.30.1
 cls
 echo ============================================================================
@@ -210,38 +177,38 @@ route delete 59.195.0.0 mask 255.255.0.0 %iphf%
 route delete 202.99.0.0 mask 255.255.0.0 %iphf%
 goto :wmjs
 
-::Ä¬ÈÏÍø¹Ø²éÑ¯¹¦ÄÜ(test)
+::é»˜è®¤ç½‘å…³æŸ¥è¯¢åŠŸèƒ½(test)
 :set_4
 cls
-for /f "tokens=15" %%i in ('ipconfig ^| find /i "Ä¬ÈÏÍø¹Ø"') do set gateway=%%i
-echo ²âÊÔ¹¦ÄÜ£¬²»Ò»¶¨×¼È·£¬Êı¾İ½ö¹©²Î¿¼
+for /f "tokens=15" %%i in ('ipconfig ^| find /i "é»˜è®¤ç½‘å…³"') do set gateway=%%i
+echo æµ‹è¯•åŠŸèƒ½ï¼Œä¸ä¸€å®šå‡†ç¡®ï¼Œæ•°æ®ä»…ä¾›å‚è€ƒ
 echo.
-echo µ±Ç°Ö÷ÍøÂçÄ¬ÈÏÍø¹ØÎª£º%gateway%
+echo å½“å‰ä¸»ç½‘ç»œé»˜è®¤ç½‘å…³ä¸ºï¼š%gateway%
 goto :wmjs2
 
-::ÎÄ×ÖÊ¹ÓÃËµÃ÷
+::æ–‡å­—ä½¿ç”¨è¯´æ˜
 :wmjs
 echo.
 echo.
 echo.
-echo    --ÈçĞŞ¸ÄÊ§°Ü£¬ÇëÖØĞÂÌá½»--
+echo    --å¦‚ä¿®æ”¹å¤±è´¥ï¼Œè¯·é‡æ–°æäº¤--
 echo ============================================================================
-echo             ÌáÊ¾
-echo ĞŞ¸ÄºóÈç¹û¶ÏÍøÖØÆôµçÄÔ¿ÉÒÔ»Ö¸´
-echo Ä¿Ç°Ö»Ìí¼ÓÁËÒ»Ìå»¯£¬¶¯Ì¬ÏµÍ³×ßÄÚÍø£¬»¥ÁªÍø+ÕşÎñÎŞ·¨Ê¹ÓÃ
-echo Èç¹ûÓĞ¸ü¶àĞèÇó×ÔĞĞÌí¼Óroute addÃüÁîĞĞ
+echo             æç¤º
+echo ä¿®æ”¹åå¦‚æœæ–­ç½‘é‡å¯ç”µè„‘å¯ä»¥æ¢å¤
+echo ç›®å‰åªæ·»åŠ äº†ä¸€ä½“åŒ–ï¼ŒåŠ¨æ€ç³»ç»Ÿèµ°å†…ç½‘ï¼Œäº’è”ç½‘+æ”¿åŠ¡æ— æ³•ä½¿ç”¨
+echo å¦‚æœæœ‰æ›´å¤šéœ€æ±‚è‡ªè¡Œæ·»åŠ route addå‘½ä»¤è¡Œ
 echo ============================================================================
 pause>nul
 goto begin
 
-::ÎÄ×ÖÊ¹ÓÃËµÃ÷2
+::æ–‡å­—ä½¿ç”¨è¯´æ˜2
 :wmjs2
 echo.
-echo                          *°´ÈÎÒâ¼ü·µ»ØÖ÷²Ëµ¥*
+echo                          *æŒ‰ä»»æ„é”®è¿”å›ä¸»èœå•*
 pause>nul
 goto begin
 
-::¸ü¸ÄÖ¸¶¨ÍøÂçIP/DNS
+::æ›´æ”¹æŒ‡å®šç½‘ç»œIP/DNS
 :set_5
 cls
 set GNAME="WLAN"
@@ -252,260 +219,260 @@ set GDNS1=59.195.63.12
 set GDNS2=202.99.192.68
 
 echo.
-echo ×Ô¶¯¸ü¸ÄIP/DNS Çë°´ 1
+echo è‡ªåŠ¨æ›´æ”¹IP/DNS è¯·æŒ‰ 1
 echo.
-echo ÊÖ¶¯¸ü¸ÄIP/DNS Çë°´ 2  £¨¸ß¼¶ÉèÖÃ£¬½¨ÒéÓĞÒ»¶¨ÍøÂç»ù´¡ÓÃ£©
+echo æ‰‹åŠ¨æ›´æ”¹IP/DNS è¯·æŒ‰ 2  ï¼ˆé«˜çº§è®¾ç½®ï¼Œå»ºè®®æœ‰ä¸€å®šç½‘ç»œåŸºç¡€ç”¨ï¼‰
 echo.
-echo ÊÖ¶¯¸ü¸ÄDNS Çë°´ 3  £¨¼ÓËÙÍøÖ·½âÎö£©
+echo æ‰‹åŠ¨æ›´æ”¹DNS è¯·æŒ‰ 3  ï¼ˆåŠ é€Ÿç½‘å€è§£æï¼‰
 echo.
-set /p KEY= [ÄúµÄÑ¡ÔñÊÇ£º]
+set /p KEY= [æ‚¨çš„é€‰æ‹©æ˜¯ï¼š]
 if %KEY% == 1 goto ONE
 if %KEY% == 2 goto TWO
 if %KEY% == 3 goto Three
 
 :Three
-ECHO ÄúÑ¡ÔñÁËÊÖ¶¯ĞŞ¸ÄDNS¡£
+ECHO æ‚¨é€‰æ‹©äº†æ‰‹åŠ¨ä¿®æ”¹DNSã€‚
 ECHO.
-echo Ä¬ÈÏÍøÂçÃû³ÆÊÇ%GNAME%£¬»Ø³µÊäÈëÄ¬ÈÏÖµ
-set /p GNAME= [ÇëÊäÈë ĞŞ¸ÄÍøÂç Ãû³Æ:]
+echo é»˜è®¤ç½‘ç»œåç§°æ˜¯%GNAME%ï¼Œå›è½¦è¾“å…¥é»˜è®¤å€¼
+set /p GNAME= [è¯·è¾“å…¥ ä¿®æ”¹ç½‘ç»œ åç§°:]
 echo.
-set /p GDNS1= [ÇëÊäÈë Ö÷ÒªDNS µØÖ·:]
+set /p GDNS1= [è¯·è¾“å…¥ ä¸»è¦DNS åœ°å€:]
 echo.
-set /p GDNS2= [ÇëÊäÈë ±¸ÓÃDNS µØÖ·:]
+set /p GDNS2= [è¯·è¾“å…¥ å¤‡ç”¨DNS åœ°å€:]
 echo.
 netsh interface ip set dns %GNAME% static %GDNS1% primary
 netsh interface ip add dns %GNAME% %GDNS2%
-echo DNSÅäÖÃÍê³É
+echo DNSé…ç½®å®Œæˆ
 pause
 goto begin
 
 :TWO
-ECHO ÄúÑ¡ÔñÁËÊÖ¶¯ĞŞ¸ÄIP/DNS¡£
+ECHO æ‚¨é€‰æ‹©äº†æ‰‹åŠ¨ä¿®æ”¹IP/DNSã€‚
 ECHO.
-echo Ä¬ÈÏÍøÂçÃû³ÆÊÇ%GNAME%£¬»Ø³µÊäÈëÄ¬ÈÏÖµ(²»È·¶¨¿ÉÒÔÔÚÊÊÅäÆ÷ÉèÖÃ²éÕÒÎŞÏßÍøÃû³Æ)
-set /p GNAME= [ÇëÊäÈë ĞŞ¸ÄÍøÂç Ãû³Æ:]
+echo é»˜è®¤ç½‘ç»œåç§°æ˜¯%GNAME%ï¼Œå›è½¦è¾“å…¥é»˜è®¤å€¼(ä¸ç¡®å®šå¯ä»¥åœ¨é€‚é…å™¨è®¾ç½®æŸ¥æ‰¾æ— çº¿ç½‘åç§°)
+set /p GNAME= [è¯·è¾“å…¥ ä¿®æ”¹ç½‘ç»œ åç§°:]
 echo.
-echo Ä¬ÈÏIPµØÖ·ÊÇ%GIP%£¬»Ø³µÊäÈëÄ¬ÈÏµØÖ·£¨¸ù¾İÍøÂç»·¾³ÌîĞ´£¬²»ÄÜÉÏÍøÖØÆôµçÄÔ»Ö¸´£©
-set /p GIP= [ÇëÊäÈëIPµØÖ·:]
+echo é»˜è®¤IPåœ°å€æ˜¯%GIP%ï¼Œå›è½¦è¾“å…¥é»˜è®¤åœ°å€ï¼ˆæ ¹æ®ç½‘ç»œç¯å¢ƒå¡«å†™ï¼Œä¸èƒ½ä¸Šç½‘é‡å¯ç”µè„‘æ¢å¤ï¼‰
+set /p GIP= [è¯·è¾“å…¥IPåœ°å€:]
 echo.
-echo Ä¬ÈÏÑÚÂëÊÇ%GMASK%£¬»Ø³µÊäÈëÄ¬ÈÏÖµ£¨Ò»°ãÊÇ255.255.255.0£¬²»ÓÃĞŞ¸Ä£©
-set /p GMASK= [ÇëÊäÈë ×ÓÍøÑÚÂë µØÖ·:]
+echo é»˜è®¤æ©ç æ˜¯%GMASK%ï¼Œå›è½¦è¾“å…¥é»˜è®¤å€¼ï¼ˆä¸€èˆ¬æ˜¯255.255.255.0ï¼Œä¸ç”¨ä¿®æ”¹ï¼‰
+set /p GMASK= [è¯·è¾“å…¥ å­ç½‘æ©ç  åœ°å€:]
 echo.
-echo Ä¬ÈÏÍø¹ØÊÇ%GGATEWAY%£¬»Ø³µÊäÈëÄ¬ÈÏÖµ£¨¸ù¾İÍøÂç»·¾³ÌîĞ´£¬²»ÄÜÉÏÍøÖØÆôµçÄÔ»Ö¸´£©
-set /p GGATEWAY= [ÇëÊäÈë Íø¹Ø µØÖ·:]
+echo é»˜è®¤ç½‘å…³æ˜¯%GGATEWAY%ï¼Œå›è½¦è¾“å…¥é»˜è®¤å€¼ï¼ˆæ ¹æ®ç½‘ç»œç¯å¢ƒå¡«å†™ï¼Œä¸èƒ½ä¸Šç½‘é‡å¯ç”µè„‘æ¢å¤ï¼‰
+set /p GGATEWAY= [è¯·è¾“å…¥ ç½‘å…³ åœ°å€:]
 echo.
-echo Ä¬ÈÏDNSÊÇ%GDNS1%£¬»Ø³µÊäÈëÄ¬ÈÏÖµ£¨¸ù¾İÍøÂç»·¾³ÌîĞ´£¬²»ÄÜÉÏÍøÖØÆôµçÄÔ»Ö¸´£©
-set /p GDNS1= [ÇëÊäÈë DNS µØÖ·:]
+echo é»˜è®¤DNSæ˜¯%GDNS1%ï¼Œå›è½¦è¾“å…¥é»˜è®¤å€¼ï¼ˆæ ¹æ®ç½‘ç»œç¯å¢ƒå¡«å†™ï¼Œä¸èƒ½ä¸Šç½‘é‡å¯ç”µè„‘æ¢å¤ï¼‰
+set /p GDNS1= [è¯·è¾“å…¥ DNS åœ°å€:]
 echo.
 
 
 :ONE
-echo ÕıÔÚ×Ô¶¯¸ü¸ÄIP/DNS......
+echo æ­£åœ¨è‡ªåŠ¨æ›´æ”¹IP/DNS......
 netsh interface ip set address %GNAME% static %GIP% %GMASK% %GGATEWAY%
-echo IPµØÖ·/×ÓÍøÑÚÂë/Íø¹ØÉèÖÃÍê³É
+echo IPåœ°å€/å­ç½‘æ©ç /ç½‘å…³è®¾ç½®å®Œæˆ
 netsh interface ip set dns %GNAME% static %GDNS1% primary
 netsh interface ip add dns %GNAME% %GDNS2%
-echo DNSÅäÖÃÍê³É
+echo DNSé…ç½®å®Œæˆ
 echo.
 pause
 goto begin
 
-::DNSÊÊÅäĞÔ²éÑ¯
-::²éÑ¯
+::DNSé€‚é…æ€§æŸ¥è¯¢
+::æŸ¥è¯¢
 :set_6
 cls
 echo 114DNS:
-ping -n 1 -w 60 114.114.114.114 | find "»Ø¸´" 
-ping -n 1 -w 60 114.114.115.115 | find "»Ø¸´" 
+ping -n 1 -w 60 114.114.114.114 | find "å›å¤" 
+ping -n 1 -w 60 114.114.115.115 | find "å›å¤" 
 echo.
-echo ÌÚÑ¶ DNSPod:
-ping -n 1 -w 60 119.29.29.29 | find "»Ø¸´" 
-ping -n 1 -w 60 182.254.116.116 | find "»Ø¸´" 
+echo è…¾è®¯ DNSPod:
+ping -n 1 -w 60 119.29.29.29 | find "å›å¤" 
+ping -n 1 -w 60 182.254.116.116 | find "å›å¤" 
 echo.
-echo °¢ÀïÔÆ¹«¹²DNS:
-ping -n 1 -w 60 223.5.5.5| find "»Ø¸´" 
-ping -n 1 -w 60 223.6.6.6 | find "»Ø¸´" 
+echo é˜¿é‡Œäº‘å…¬å…±DNS:
+ping -n 1 -w 60 223.5.5.5| find "å›å¤" 
+ping -n 1 -w 60 223.6.6.6 | find "å›å¤" 
 echo.
-echo °Ù¶È¹«¹²DNS:
-ping -n 1 -w 60 180.76.76.76 | find "»Ø¸´" 
+echo ç™¾åº¦å…¬å…±DNS:
+ping -n 1 -w 60 180.76.76.76 | find "å›å¤" 
 echo.
 echo CNNIC DNS:
-ping -n 1 -w 60 1.2.4.8 | find "»Ø¸´" 
-ping -n 1 -w 60 210.2.4.8 | find "»Ø¸´" 
+ping -n 1 -w 60 1.2.4.8 | find "å›å¤" 
+ping -n 1 -w 60 210.2.4.8 | find "å›å¤" 
 echo.
-echo Çå»ª´óÑ§TUNA DNS:
-ping -n 1 -w 60 101.6.6.6 | find "»Ø¸´" 
+echo æ¸…åå¤§å­¦TUNA DNS:
+ping -n 1 -w 60 101.6.6.6 | find "å›å¤" 
 echo.
 echo OneDNS:
-ping -n 1 -w 60 117.50.10.10 | find "»Ø¸´" 
-ping -n 1 -w 60 52.80.52.52 | find "»Ø¸´" 
+ping -n 1 -w 60 117.50.10.10 | find "å›å¤" 
+ping -n 1 -w 60 52.80.52.52 | find "å›å¤" 
 echo.
 echo Cloudflare DNS:
-ping -n 1 -w 60 1.1.1.1 | find "»Ø¸´" 
-ping -n 1 -w 60 1.0.0.1 | find "»Ø¸´" 
+ping -n 1 -w 60 1.1.1.1 | find "å›å¤" 
+ping -n 1 -w 60 1.0.0.1 | find "å›å¤" 
 echo.
-echo ¹È¸è¹«¹²DNS:
-ping -n 1 -w 60 8.8.8.8 | find "»Ø¸´" 
-ping -n 1 -w 60 8.8.4.4 | find "»Ø¸´" 
+echo è°·æ­Œå…¬å…±DNS:
+ping -n 1 -w 60 8.8.8.8 | find "å›å¤" 
+ping -n 1 -w 60 8.8.4.4 | find "å›å¤" 
 echo.
 echo Cisco OpenDNS:
-ping -n 1 -w 60 208.67.222.222 | find "»Ø¸´" 
-ping -n 1 -w 60 208.67.220.220 | find "»Ø¸´" 
+ping -n 1 -w 60 208.67.222.222 | find "å›å¤" 
+ping -n 1 -w 60 208.67.220.220 | find "å›å¤" 
 echo.
-echo Î¢ÈíDNS:
-ping -n 1 -w 60 4.2.2.1 | find "»Ø¸´" 
-ping -n 1 -w 60 4.2.2.2 | find "»Ø¸´" 
+echo å¾®è½¯DNS:
+ping -n 1 -w 60 4.2.2.1 | find "å›å¤" 
+ping -n 1 -w 60 4.2.2.2 | find "å›å¤" 
 echo.
-echo DNSÏßÂ·²âÊÔÍê³É,Ñ¡ÔñÑÓ³ÙµÍµÄÏßÂ·
+echo DNSçº¿è·¯æµ‹è¯•å®Œæˆ,é€‰æ‹©å»¶è¿Ÿä½çš„çº¿è·¯
 
-::ÅĞ¶ÏÊÇ·ñ´òÓ¡
+::åˆ¤æ–­æ˜¯å¦æ‰“å°
 echo.
-echo »Ø³µ¼ü·µ»ØÖ÷²Ëµ¥
-echo ¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı
-echo ÊäÈë¡°export¡±µ¼³ö²âÊÔ½á¹ûµ½×ÀÃæ
-set /p pinge=ÇëÊäÈë:
+echo å›è½¦é”®è¿”å›ä¸»èœå•
+echo â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“
+echo è¾“å…¥â€œexportâ€å¯¼å‡ºæµ‹è¯•ç»“æœåˆ°æ¡Œé¢
+set /p pinge=è¯·è¾“å…¥:
 if "%pinge%" neq "export" ( goto:begin ) else ( goto:set_6_1 )
 
-::´òÓ¡½á¹ûµ½×ÀÃæµÄping.txt
+::æ‰“å°ç»“æœåˆ°æ¡Œé¢çš„ping.txt
 :set_6_1
 cls
 echo 114DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 114.114.114.114 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 114.114.115.115 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 114.114.114.114 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 114.114.115.115 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo ÌÚÑ¶ DNSPod: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 119.29.29.29 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 182.254.116.116 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+echo è…¾è®¯ DNSPod: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 119.29.29.29 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 182.254.116.116 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo °¢ÀïÔÆ¹«¹²DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 223.5.5.5| find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 223.6.6.6 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+echo é˜¿é‡Œäº‘å…¬å…±DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 223.5.5.5| find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 223.6.6.6 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo °Ù¶È¹«¹²DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 180.76.76.76 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+echo ç™¾åº¦å…¬å…±DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 180.76.76.76 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
 echo CNNIC DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 1.2.4.8 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 210.2.4.8 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 1.2.4.8 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 210.2.4.8 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo Çå»ª´óÑ§TUNA DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 101.6.6.6 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+echo æ¸…åå¤§å­¦TUNA DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 101.6.6.6 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
 echo OneDNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 117.50.10.10 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 52.80.52.52 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 117.50.10.10 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 52.80.52.52 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
 echo Cloudflare DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 1.1.1.1 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 1.0.0.1 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 1.1.1.1 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 1.0.0.1 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo ¹È¸è¹«¹²DNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 8.8.8.8 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 8.8.4.4 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+echo è°·æ­Œå…¬å…±DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 8.8.8.8 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 8.8.4.4 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
 echo Cisco OpenDNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 208.67.222.222 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 208.67.220.220 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 208.67.222.222 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 208.67.220.220 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo Î¢ÈíDNS: >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 4.2.2.1 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
-ping -n 1 -w 60 4.2.2.2 | find "»Ø¸´" >> %USERPROFILE%\desktop\ping.txt
+echo å¾®è½¯DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 4.2.2.1 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 4.2.2.2 | find "å›å¤" >> %USERPROFILE%\desktop\ping.txt
 echo. >> %USERPROFILE%\desktop\ping.txt
-echo ---µ¼³ö³É¹¦£¬ÇëÔÚ×ÀÃæ²éÕÒping.txtÎÄ¼ş---
-echo         ---°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥---
+echo ---å¯¼å‡ºæˆåŠŸï¼Œè¯·åœ¨æ¡Œé¢æŸ¥æ‰¾ping.txtæ–‡ä»¶---
+echo         ---æŒ‰ä»»æ„é”®å›ä¸»èœå•---
 pause>nul
 goto begin
 
-::»Ö¸´²¡¶¾Ôì³ÉµÄÎÄ¼ş¶ªÊ§£¨¸ü¸ÄÎÄ¼şÊôĞÔ£©
+::æ¢å¤ç—…æ¯’é€ æˆçš„æ–‡ä»¶ä¸¢å¤±ï¼ˆæ›´æ”¹æ–‡ä»¶å±æ€§ï¼‰
 :set_7
 cls
-mshta vbscript:msgbox("ĞèÒª°Ñµ±Ç°ÎÄ¼ş·ÅÖÃÔÚĞèÒª»Ö¸´µÄ¸ùÄ¿Â¼ÏÂÔËĞĞ!",48,"Ê¹ÓÃËµÃ÷")(window.close) 
+mshta vbscript:msgbox("éœ€è¦æŠŠå½“å‰æ–‡ä»¶æ”¾ç½®åœ¨éœ€è¦æ¢å¤çš„æ ¹ç›®å½•ä¸‹è¿è¡Œ!",48,"ä½¿ç”¨è¯´æ˜")(window.close) 
 attrib -s -h /s /d
-::¢Ùattrib£ºÉèÖÃÎÄ¼şÊôĞÔµÄÖ¸Áî£»
-::¢Ús£ºÏµÍ³ÎÄ¼şÊôĞÔ£»
-::¢Ûr£ºÖ»¶ÁÎÄ¼şÊôĞÔ£»
-::¢Üh£ºÒş²ØÎÄ¼şÊôĞÔ£»
-::¢İ-£ºÇå³ıÊôĞÔ£»
-::¢Şabc£ºÒş²ØÎÄ¼ş¼Ğ¡£
-echo Ö¸ÁîÒÑÖ´ĞĞ
-echo         ---°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥---
+::â‘ attribï¼šè®¾ç½®æ–‡ä»¶å±æ€§çš„æŒ‡ä»¤ï¼›
+::â‘¡sï¼šç³»ç»Ÿæ–‡ä»¶å±æ€§ï¼›
+::â‘¢rï¼šåªè¯»æ–‡ä»¶å±æ€§ï¼›
+::â‘£hï¼šéšè—æ–‡ä»¶å±æ€§ï¼›
+::â‘¤-ï¼šæ¸…é™¤å±æ€§ï¼›
+::â‘¥abcï¼šéšè—æ–‡ä»¶å¤¹ã€‚
+echo æŒ‡ä»¤å·²æ‰§è¡Œ
+echo         ---æŒ‰ä»»æ„é”®å›ä¸»èœå•---
 pause>nul
 goto begin
 
-::¸üĞÂÈÕÖ¾
+::æ›´æ–°æ—¥å¿—
 :set_8
 cls
-echo v1.0 2020Äê04ÔÂ20ÈÕ 20:34
+echo v1.0 2020å¹´04æœˆ20æ—¥ 20:34
 echo ------
-echo 1.Ö÷¹¦ÄÜÖÆ×÷£¨ÄÚÍâÍøÍ¬Ê±ÓÃ£©
+echo 1.ä¸»åŠŸèƒ½åˆ¶ä½œï¼ˆå†…å¤–ç½‘åŒæ—¶ç”¨ï¼‰
 echo.
 
-echo v2.1.1 2020Äê04ÔÂ20ÈÕ 21:27
+echo v2.1.1 2020å¹´04æœˆ20æ—¥ 21:27
 echo ------
-echo 1.ÕûºÏ´úÂë
-echo 2.Ìí¼Ó¹ÜÀíÔ±Æô¶¯È¨ÏŞ
+echo 1.æ•´åˆä»£ç 
+echo 2.æ·»åŠ ç®¡ç†å‘˜å¯åŠ¨æƒé™
 echo.
 
-echo v3.0.0 2020Äê05ÔÂ08ÈÕ 10:01
+echo v3.0.0 2020å¹´05æœˆ08æ—¥ 10:01
 echo ------
-echo 1.Ìí¼Ó²Ëµ¥¹¦ÄÜ
+echo 1.æ·»åŠ èœå•åŠŸèƒ½
 echo.
 
-echo v3.1.2 2020Äê05ÔÂ09ÈÕ 15:31
+echo v3.1.2 2020å¹´05æœˆ09æ—¥ 15:31
 echo ------
-echo 1.Ìí¼Ó»Ö¸´ĞŞ¸Ä¹¦ÄÜ
-echo 2.Ìí¼ÓÄ¬ÈÏÍø¹Ø²éÑ¯¹¦ÄÜ(test)
-echo 3.ÓÅ»¯´úÂë
+echo 1.æ·»åŠ æ¢å¤ä¿®æ”¹åŠŸèƒ½
+echo 2.æ·»åŠ é»˜è®¤ç½‘å…³æŸ¥è¯¢åŠŸèƒ½(test)
+echo 3.ä¼˜åŒ–ä»£ç 
 echo.
 
-echo v4.2.0 2021Äê01ÔÂ12ÈÕ 10:23
+echo v4.2.0 2021å¹´01æœˆ12æ—¥ 10:23
 echo ------
-echo 1.ÓÅ»¯¸ü¸ÄWIFIÍøÂçIP/DNS´úÂë
-echo 2.ÓÅ»¯ÄÚÍâÍøÍ¬Ê±Ê¹ÓÃ´úÂë
-echo 3.ÓÅ»¯²Ëµ¥ÑùÊ½
+echo 1.ä¼˜åŒ–æ›´æ”¹WIFIç½‘ç»œIP/DNSä»£ç 
+echo 2.ä¼˜åŒ–å†…å¤–ç½‘åŒæ—¶ä½¿ç”¨ä»£ç 
+echo 3.ä¼˜åŒ–èœå•æ ·å¼
 echo.
 
-echo v4.2.1 2021Äê01ÔÂ25ÈÕ 09:23
+echo v4.2.1 2021å¹´01æœˆ25æ—¥ 09:23
 echo ------
-echo 1.ÓÅ»¯³ÌĞò½çÃæ´óĞ¡
-echo 2.ÓÅ»¯´úÂë(Ìí¼Ó×¢ÊÍ)
+echo 1.ä¼˜åŒ–ç¨‹åºç•Œé¢å¤§å°
+echo 2.ä¼˜åŒ–ä»£ç (æ·»åŠ æ³¨é‡Š)
 echo.
 
-echo v4.3.0 2021Äê02ÔÂ01ÈÕ 22:25
+echo v4.3.0 2021å¹´02æœˆ01æ—¥ 22:25
 echo ------
-echo 1.¼ÓÈëDNSÊÊÅäĞÔ²éÑ¯¹¦ÄÜ(µ¼³ö¿ÉÄÜ»áÓĞÎÊÌâ£¬ÈÕºóÅÅ²é)
-echo 2.¼ÓÈë¸üĞÂÈÕÖ¾¹¦ÄÜ
-echo 3.ĞŞ¸ÄtoolÃû×ÖÎª"ÍøÂçÇĞ»»¹¤¾ß"
+echo 1.åŠ å…¥DNSé€‚é…æ€§æŸ¥è¯¢åŠŸèƒ½(å¯¼å‡ºå¯èƒ½ä¼šæœ‰é—®é¢˜ï¼Œæ—¥åæ’æŸ¥)
+echo 2.åŠ å…¥æ›´æ–°æ—¥å¿—åŠŸèƒ½
+echo 3.ä¿®æ”¹toolåå­—ä¸º"ç½‘ç»œåˆ‡æ¢å·¥å…·"
 echo.
 
-echo v4.3.1 2021Äê02ÔÂ02ÈÕ 09:16
+echo v4.3.1 2021å¹´02æœˆ02æ—¥ 09:16
 echo ------
-echo 1.ÓÅ»¯¸ü¸ÄÖ¸¶¨ÍøÂçµÄIP/DNS´úÂë£¬²éÑ¯Íê×îÓÅDNS¿ÉÒÔµ¥¶ÀÖ¸¶¨ÍøÂç¸ü¸ÄÁË
-echo 2.ĞŞ¸ÄÅĞ¶Ïµ¼³öÓï¾ä´úÂë
-echo 3.ÎÄ¼ş¸ñÊ½ÓÉcmd´ò°ü³ÉexeÎÄ¼ş
+echo 1.ä¼˜åŒ–æ›´æ”¹æŒ‡å®šç½‘ç»œçš„IP/DNSä»£ç ï¼ŒæŸ¥è¯¢å®Œæœ€ä¼˜DNSå¯ä»¥å•ç‹¬æŒ‡å®šç½‘ç»œæ›´æ”¹äº†
+echo 2.ä¿®æ”¹åˆ¤æ–­å¯¼å‡ºè¯­å¥ä»£ç 
+echo 3.æ–‡ä»¶æ ¼å¼ç”±cmdæ‰“åŒ…æˆexeæ–‡ä»¶
 echo.
 
-echo v5.0.1 2021Äê04ÔÂ01ÈÕ 10:30
+echo v5.0.1 2021å¹´04æœˆ01æ—¥ 10:30
 echo ------
-echo 1.ÓÅ»¯¸ü¸ÄÖ¸¶¨ÍøÂçµÄcall :sysm;goto :eofÂß¼­(¶à´Îµ÷ÓÃÍ¬Ò»¸ö±ê¼Ç)
-echo 2.Ìí¼Ó´óÌüÍøÂç»·¾³Íø¹ØµØÖ·Îª10.20.30.1
-echo 3.»Ö¸´ĞŞ¸ÄÌí¼Ó´óÌüÍøÂç»·¾³
-echo 4.ĞŞ¸Ä²¿·Ö×¢ÊÍ
-echo 5.ĞŞ¸ÄcallÂß¼­
+echo 1.ä¼˜åŒ–æ›´æ”¹æŒ‡å®šç½‘ç»œçš„call :sysm;goto :eofé€»è¾‘(å¤šæ¬¡è°ƒç”¨åŒä¸€ä¸ªæ ‡è®°)
+echo 2.æ·»åŠ å¤§å…ç½‘ç»œç¯å¢ƒç½‘å…³åœ°å€ä¸º10.20.30.1
+echo 3.æ¢å¤ä¿®æ”¹æ·»åŠ å¤§å…ç½‘ç»œç¯å¢ƒ
+echo 4.ä¿®æ”¹éƒ¨åˆ†æ³¨é‡Š
+echo 5.ä¿®æ”¹callé€»è¾‘
 echo.
 
-echo v5.1.0-v5.2.0 2021Äê04ÔÂ12ÈÕ 11:48
+echo v5.1.0-v5.2.0 2021å¹´04æœˆ12æ—¥ 11:48
 echo ------
-echo 1.Ìí¼Ó»Ö¸´²¡¶¾Ôì³ÉµÄÎÄ¼ş¶ªÊ§¹¦ÄÜ
-echo 2.Ìí¼Ó·¢²¼Ò³´ò¿ª
+echo 1.æ·»åŠ æ¢å¤ç—…æ¯’é€ æˆçš„æ–‡ä»¶ä¸¢å¤±åŠŸèƒ½
+echo 2.æ·»åŠ å‘å¸ƒé¡µæ‰“å¼€
 echo.
 
-echo         ---°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥---
+echo         ---æŒ‰ä»»æ„é”®å›ä¸»èœå•---
 pause>nul
 goto begin
 
-::¹Ø±Õ½Å±¾
+::å…³é—­è„šæœ¬
 :end
 exit
 
-::×ªÔØÇë×¢Ã÷ ·¢²¼µØÖ·https://asdrt666.com
+::è½¬è½½è¯·æ³¨æ˜ å‘å¸ƒåœ°å€https://asdrt666.com
