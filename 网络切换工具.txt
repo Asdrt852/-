@@ -1,0 +1,511 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCaDJHuI9UE7FDh5aDgEwII93GqaHyh8NTUCUqGbozS3p3Hn2L2aIvUU1UPlY58u2XQUkcgDbA==
+::YAwzuBVtJxjWCl3EqQJhSA==
+::ZR4luwNxJguZRRnTrBtQ
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJlZkkaHGQ=
+::ZQ05rAF9IBncCkqN+0xwdVsBAlbMbAs=
+::ZQ05rAF9IAHYFVzEqQK39erTl/gH1Iw863eZPy1+Cj2noFRddfE7apubzOHAcq5Dig==
+::eg0/rx1wNQPfEVWB+kM9LVsJDINfzexh+jD0D24WLW9QZ8j4g8I9Yc/6ybCcNKAFvwu2O8ZN
+::fBEirQZwNQPfEVWB+kM9LVsJDINfzexh+jD0D24WLW9QZ8j4g8I9Yc/6ybCcNKAFvwu2O8ZN
+::cRolqwZ3JBvQF1fEqQK39erTl/gH1Iw863eZPy1+Cj2noFRddfE7apubzOHAcq5Dig==
+::dhA7uBVwLU+EWFiX8FAkfk0CAgeNMQs=
+::YQ03rBFzNR3SWATE9VE0Og8CGlLMP2S3Zg==
+::dhAmsQZ3MwfNWATE9VE0Og8CGlLMP2S3Zg==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCaDJHuI9UE7FDh5aDgEwII93GqaHyh8NTUCUqGbozS3p3HnXWl/pzvvb60D83vvU62fHS7bLBlBPjO4ah0g6XgX+DbLZ4mZqwqB
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
+@echo off
+
+::获取管理员权限（打包发布自带管理员启动）
+::%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
+
+::配置BAT对话框样式
+title 网络切换工具@by Asdrt v5.2.0 asdrt666.com
+::配置窗口大小
+::MODE con: COLS=80 lines=20
+::文本颜色
+::color 0a
+
+::菜单
+:begin
+cls
+echo.
+echo.
+echo     --网络切换工具@by Asdrt v5.2.0 20210412 1148--
+echo                  https://asdrt666.com
+echo.
+echo ============================================================================
+echo 0.打开发布页检查更新
+echo 1.更改内外网同时使用（修改IPV4改路由表）
+echo 2.检查网关连接情况
+echo 3.恢复第一选项修改
+echo 4.默认网关查询(测试功能)
+echo 5.更改指定网络的IP/DNS
+echo 6.DNS适配性查询
+echo 7.恢复病毒造成的文件丢失（更改文件属性）
+echo 8.更新日志
+echo 9.退出
+echo ============================================================================
+echo.
+echo.
+choice /c 1234567890 /n /m "请选择【1-9】："
+
+if %errorlevel% == 1 goto set_1
+if %errorlevel% == 2 goto set_2
+if %errorlevel% == 3 goto set_3
+if %errorlevel% == 4 goto set_4
+if %errorlevel% == 5 goto set_5
+if %errorlevel% == 6 goto set_6
+if %errorlevel% == 7 goto set_7
+if %errorlevel% == 8 goto set_8
+if %errorlevel% == 9 goto end
+if %errorlevel% == 0 goto github
+
+::打开发布页检查更新
+:github
+start https://github.com/Asdrt852/CMD_DT/releases
+::start asdrt666.com
+goto begin
+
+::选择使用场景
+:set_1
+cls
+echo 选择使用场景回车确认：
+echo.
+echo 1.局内
+echo.
+echo 2.大厅
+echo.
+set /p changjing= [您的选择是：]
+if %changjing% == 1 goto set_1_1
+if %changjing% == 2 goto set_1_2
+
+::修改网关(局内场景)
+:set_1_1
+cls
+ipconfig
+call :sysm
+goto ipa
+
+::修改网关(大厅场景)
+:set_1_2
+cls
+ipconfig
+call :sysm
+goto ipa2
+
+::文字使用说明
+:sysm
+echo.
+echo.
+echo.
+echo ============================================================================
+echo ·····按照以下步骤操作·····
+echo 1.从上面找到新网卡网关地址（无线网卡的网关）
+echo 2.在下方输入网关地址
+echo 3.等待修改
+echo ============================================================================
+goto :eof
+
+::输入更改端口(局内)
+:ipa
+echo. --网关默认值为192.168.10.254--
+echo.
+set/p ip=--默认直接按回车，修改直接输入--
+if not defined ip set ip=192.168.10.254
+
+::修改(局内)
+:ipg
+cls
+echo ============================================================================
+echo ============================================================================
+route delete 0.0.0.0 mask 0.0.0.0 %ip%
+route add 59.195.0.0 mask 255.255.0.0 %ip%
+route add 202.99.0.0 mask 255.255.0.0 %ip%
+goto :wmjs
+
+::输入更改端口(大厅)
+:ipa2
+echo. --网关默认值为10.20.30.1--
+echo.
+set/p ip=--默认直接按回车，修改直接输入--
+if not defined ip set ip=10.20.30.1
+
+::修改(大厅)
+:ipg2
+cls
+echo ============================================================================
+echo ============================================================================
+route delete 0.0.0.0 mask 0.0.0.0 %ip%
+route add 59.195.0.0 mask 255.255.0.0 %ip%
+route add 202.99.0.0 mask 255.255.0.0 %ip%
+goto :wmjs
+
+:set_2
+cls
+route print
+call :wmjs2
+pause>nul
+goto begin
+
+::恢复
+:set_3
+cls
+echo 选择使用场景回车确认：
+echo.
+echo 1.局内
+echo.
+echo 2.大厅
+echo.
+set /p hfchangjing= [您的选择是：]
+if %hfchangjing% == 1 goto set_3_1
+if %hfchangjing% == 2 goto set_3_2
+
+::恢复网关(局内场景)
+:set_3_1
+cls
+route print
+echo.
+echo. --网关默认值为192.168.10.254--
+set/p iphf=--默认直接按回车，修改直接输入--
+if not defined iphf set iphf=192.168.10.254
+cls
+echo ============================================================================
+echo ============================================================================
+route add 0.0.0.0 mask 0.0.0.0 %iphf%
+route delete 59.195.0.0 mask 255.255.0.0 %iphf%
+route delete 202.99.0.0 mask 255.255.0.0 %iphf%
+goto :wmjs
+
+::恢复网关(大厅场景)
+:set_3_2
+cls
+route print
+echo.
+echo. --网关默认值为10.20.30.1--
+set/p iphf=--默认直接按回车，修改直接输入--
+if not defined iphf set iphf=10.20.30.1
+cls
+echo ============================================================================
+echo ============================================================================
+route add 0.0.0.0 mask 0.0.0.0 %iphf%
+route delete 59.195.0.0 mask 255.255.0.0 %iphf%
+route delete 202.99.0.0 mask 255.255.0.0 %iphf%
+goto :wmjs
+
+::默认网关查询功能(test)
+:set_4
+cls
+for /f "tokens=15" %%i in ('ipconfig ^| find /i "默认网关"') do set gateway=%%i
+echo 测试功能，不一定准确，数据仅供参考
+echo.
+echo 当前主网络默认网关为：%gateway%
+goto :wmjs2
+
+::文字使用说明
+:wmjs
+echo.
+echo.
+echo.
+echo    --如修改失败，请重新提交--
+echo ============================================================================
+echo             提示
+echo 修改后如果断网重启电脑可以恢复
+echo 目前只添加了一体化，动态系统走内网，互联网+政务无法使用
+echo 如果有更多需求自行添加route add命令行
+echo ============================================================================
+pause>nul
+goto begin
+
+::文字使用说明2
+:wmjs2
+echo.
+echo                          *按任意键返回主菜单*
+pause>nul
+goto begin
+
+::更改指定网络IP/DNS
+:set_5
+cls
+set GNAME="WLAN"
+set GIP=192.168.10.200
+set GMASK=255.255.255.0
+set GGATEWAY=192.168.10.254
+set GDNS1=59.195.63.12
+set GDNS2=202.99.192.68
+
+echo.
+echo 自动更改IP/DNS 请按 1
+echo.
+echo 手动更改IP/DNS 请按 2  （高级设置，建议有一定网络基础用）
+echo.
+echo 手动更改DNS 请按 3  （加速网址解析）
+echo.
+set /p KEY= [您的选择是：]
+if %KEY% == 1 goto ONE
+if %KEY% == 2 goto TWO
+if %KEY% == 3 goto Three
+
+:Three
+ECHO 您选择了手动修改DNS。
+ECHO.
+echo 默认网络名称是%GNAME%，回车输入默认值
+set /p GNAME= [请输入 修改网络 名称:]
+echo.
+set /p GDNS1= [请输入 主要DNS 地址:]
+echo.
+set /p GDNS2= [请输入 备用DNS 地址:]
+echo.
+netsh interface ip set dns %GNAME% static %GDNS1% primary
+netsh interface ip add dns %GNAME% %GDNS2%
+echo DNS配置完成
+pause
+goto begin
+
+:TWO
+ECHO 您选择了手动修改IP/DNS。
+ECHO.
+echo 默认网络名称是%GNAME%，回车输入默认值(不确定可以在适配器设置查找无线网名称)
+set /p GNAME= [请输入 修改网络 名称:]
+echo.
+echo 默认IP地址是%GIP%，回车输入默认地址（根据网络环境填写，不能上网重启电脑恢复）
+set /p GIP= [请输入IP地址:]
+echo.
+echo 默认掩码是%GMASK%，回车输入默认值（一般是255.255.255.0，不用修改）
+set /p GMASK= [请输入 子网掩码 地址:]
+echo.
+echo 默认网关是%GGATEWAY%，回车输入默认值（根据网络环境填写，不能上网重启电脑恢复）
+set /p GGATEWAY= [请输入 网关 地址:]
+echo.
+echo 默认DNS是%GDNS1%，回车输入默认值（根据网络环境填写，不能上网重启电脑恢复）
+set /p GDNS1= [请输入 DNS 地址:]
+echo.
+
+
+:ONE
+echo 正在自动更改IP/DNS......
+netsh interface ip set address %GNAME% static %GIP% %GMASK% %GGATEWAY%
+echo IP地址/子网掩码/网关设置完成
+netsh interface ip set dns %GNAME% static %GDNS1% primary
+netsh interface ip add dns %GNAME% %GDNS2%
+echo DNS配置完成
+echo.
+pause
+goto begin
+
+::DNS适配性查询
+::查询
+:set_6
+cls
+echo 114DNS:
+ping -n 1 -w 60 114.114.114.114 | find "回复" 
+ping -n 1 -w 60 114.114.115.115 | find "回复" 
+echo.
+echo 腾讯 DNSPod:
+ping -n 1 -w 60 119.29.29.29 | find "回复" 
+ping -n 1 -w 60 182.254.116.116 | find "回复" 
+echo.
+echo 阿里云公共DNS:
+ping -n 1 -w 60 223.5.5.5| find "回复" 
+ping -n 1 -w 60 223.6.6.6 | find "回复" 
+echo.
+echo 百度公共DNS:
+ping -n 1 -w 60 180.76.76.76 | find "回复" 
+echo.
+echo CNNIC DNS:
+ping -n 1 -w 60 1.2.4.8 | find "回复" 
+ping -n 1 -w 60 210.2.4.8 | find "回复" 
+echo.
+echo 清华大学TUNA DNS:
+ping -n 1 -w 60 101.6.6.6 | find "回复" 
+echo.
+echo OneDNS:
+ping -n 1 -w 60 117.50.10.10 | find "回复" 
+ping -n 1 -w 60 52.80.52.52 | find "回复" 
+echo.
+echo Cloudflare DNS:
+ping -n 1 -w 60 1.1.1.1 | find "回复" 
+ping -n 1 -w 60 1.0.0.1 | find "回复" 
+echo.
+echo 谷歌公共DNS:
+ping -n 1 -w 60 8.8.8.8 | find "回复" 
+ping -n 1 -w 60 8.8.4.4 | find "回复" 
+echo.
+echo Cisco OpenDNS:
+ping -n 1 -w 60 208.67.222.222 | find "回复" 
+ping -n 1 -w 60 208.67.220.220 | find "回复" 
+echo.
+echo 微软DNS:
+ping -n 1 -w 60 4.2.2.1 | find "回复" 
+ping -n 1 -w 60 4.2.2.2 | find "回复" 
+echo.
+echo DNS线路测试完成,选择延迟低的线路
+
+::判断是否打印
+echo.
+echo 回车键返回主菜单
+echo ↓↓↓↓↓↓↓↓↓↓
+echo 输入“export”导出测试结果到桌面
+set /p pinge=请输入:
+if "%pinge%" neq "export" ( goto:begin ) else ( goto:set_6_1 )
+
+::打印结果到桌面的ping.txt
+:set_6_1
+cls
+echo 114DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 114.114.114.114 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 114.114.115.115 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo 腾讯 DNSPod: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 119.29.29.29 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 182.254.116.116 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo 阿里云公共DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 223.5.5.5| find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 223.6.6.6 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo 百度公共DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 180.76.76.76 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo CNNIC DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 1.2.4.8 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 210.2.4.8 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo 清华大学TUNA DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 101.6.6.6 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo OneDNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 117.50.10.10 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 52.80.52.52 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo Cloudflare DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 1.1.1.1 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 1.0.0.1 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo 谷歌公共DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 8.8.8.8 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 8.8.4.4 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo Cisco OpenDNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 208.67.222.222 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 208.67.220.220 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo 微软DNS: >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 4.2.2.1 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+ping -n 1 -w 60 4.2.2.2 | find "回复" >> %USERPROFILE%\desktop\ping.txt
+echo. >> %USERPROFILE%\desktop\ping.txt
+echo ---导出成功，请在桌面查找ping.txt文件---
+echo         ---按任意键回主菜单---
+pause>nul
+goto begin
+
+::恢复病毒造成的文件丢失（更改文件属性）
+:set_7
+cls
+mshta vbscript:msgbox("需要把当前文件放置在需要恢复的根目录下运行!",48,"使用说明")(window.close) 
+attrib -s -h /s /d
+::①attrib：设置文件属性的指令；
+::②s：系统文件属性；
+::③r：只读文件属性；
+::④h：隐藏文件属性；
+::⑤-：清除属性；
+::⑥abc：隐藏文件夹。
+echo 指令已执行
+echo         ---按任意键回主菜单---
+pause>nul
+goto begin
+
+::更新日志
+:set_8
+cls
+echo v1.0 2020年04月20日 20:34
+echo ------
+echo 1.主功能制作（内外网同时用）
+echo.
+
+echo v2.1.1 2020年04月20日 21:27
+echo ------
+echo 1.整合代码
+echo 2.添加管理员启动权限
+echo.
+
+echo v3.0.0 2020年05月08日 10:01
+echo ------
+echo 1.添加菜单功能
+echo.
+
+echo v3.1.2 2020年05月09日 15:31
+echo ------
+echo 1.添加恢复修改功能
+echo 2.添加默认网关查询功能(test)
+echo 3.优化代码
+echo.
+
+echo v4.2.0 2021年01月12日 10:23
+echo ------
+echo 1.优化更改WIFI网络IP/DNS代码
+echo 2.优化内外网同时使用代码
+echo 3.优化菜单样式
+echo.
+
+echo v4.2.1 2021年01月25日 09:23
+echo ------
+echo 1.优化程序界面大小
+echo 2.优化代码(添加注释)
+echo.
+
+echo v4.3.0 2021年02月01日 22:25
+echo ------
+echo 1.加入DNS适配性查询功能(导出可能会有问题，日后排查)
+echo 2.加入更新日志功能
+echo 3.修改tool名字为"网络切换工具"
+echo.
+
+echo v4.3.1 2021年02月02日 09:16
+echo ------
+echo 1.优化更改指定网络的IP/DNS代码，查询完最优DNS可以单独指定网络更改了
+echo 2.修改判断导出语句代码
+echo 3.文件格式由cmd打包成exe文件
+echo.
+
+echo v5.0.1 2021年04月01日 10:30
+echo ------
+echo 1.优化更改指定网络的call :sysm;goto :eof逻辑(多次调用同一个标记)
+echo 2.添加大厅网络环境网关地址为10.20.30.1
+echo 3.恢复修改添加大厅网络环境
+echo 4.修改部分注释
+echo 5.修改call逻辑
+echo.
+
+echo v5.1.0-v5.2.0 2021年04月12日 11:48
+echo ------
+echo 1.添加恢复病毒造成的文件丢失功能
+echo 2.添加发布页打开
+echo.
+
+echo         ---按任意键回主菜单---
+pause>nul
+goto begin
+
+::关闭脚本
+:end
+exit
+
+::转载请注明 发布地址https://asdrt666.com
