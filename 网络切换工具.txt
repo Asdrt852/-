@@ -1,10 +1,10 @@
 @echo off
 
 ::获取管理员权限（打包发布自带管理员启动）
-::%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
+%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
 
 ::配置BAT对话框样式
-title 网络切换工具@by Asdrt v5.2.0 asdrt666.com
+title 网络切换工具@by Asdrt v5.3.0 asdrt666.com
 ::配置窗口大小
 ::MODE con: COLS=80 lines=20
 ::文本颜色
@@ -15,7 +15,7 @@ title 网络切换工具@by Asdrt v5.2.0 asdrt666.com
 cls
 echo.
 echo.
-echo     --网络切换工具@by Asdrt v5.2.0 20210412 1148--
+echo     --网络切换工具@by Asdrt v5.3.0 20210429 1455--
 echo                  https://asdrt666.com
 echo.
 echo ============================================================================
@@ -105,6 +105,7 @@ echo ===========================================================================
 echo ============================================================================
 route delete 0.0.0.0 mask 0.0.0.0 %ip%
 route add 59.195.0.0 mask 255.255.0.0 %ip%
+route add 59.255.0.0 mask 255.255.0.0 %ip%
 route add 202.99.0.0 mask 255.255.0.0 %ip%
 goto :wmjs
 
@@ -122,6 +123,7 @@ echo ===========================================================================
 echo ============================================================================
 route delete 0.0.0.0 mask 0.0.0.0 %ip%
 route add 59.195.0.0 mask 255.255.0.0 %ip%
+route add 59.255.0.0 mask 255.255.0.0 %ip%
 route add 202.99.0.0 mask 255.255.0.0 %ip%
 goto :wmjs
 
@@ -158,6 +160,7 @@ echo ===========================================================================
 echo ============================================================================
 route add 0.0.0.0 mask 0.0.0.0 %iphf%
 route delete 59.195.0.0 mask 255.255.0.0 %iphf%
+route delete 59.255.0.0 mask 255.255.0.0 %iphf%
 route delete 202.99.0.0 mask 255.255.0.0 %iphf%
 goto :wmjs
 
@@ -174,6 +177,7 @@ echo ===========================================================================
 echo ============================================================================
 route add 0.0.0.0 mask 0.0.0.0 %iphf%
 route delete 59.195.0.0 mask 255.255.0.0 %iphf%
+route delete 59.255.0.0 mask 255.255.0.0 %iphf%
 route delete 202.99.0.0 mask 255.255.0.0 %iphf%
 goto :wmjs
 
@@ -465,6 +469,11 @@ echo v5.1.0-v5.2.0 2021年04月12日 11:48
 echo ------
 echo 1.添加恢复病毒造成的文件丢失功能
 echo 2.添加发布页打开
+echo.
+
+echo v5.3.0 2021年04月29日 14:55
+echo ------
+echo 添加路由表-59.255.0.0（互聯網+政務系統登錄）
 echo.
 
 echo         ---按任意键回主菜单---
